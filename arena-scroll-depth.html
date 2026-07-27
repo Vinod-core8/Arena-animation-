@@ -1,0 +1,2555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARENA ANIMATION — Scroll Depth</title>
+<link rel="icon" type="image/webp" href="data:image/webp;base64,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">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:ital,wght@0,300;0,400;0,500;0,700;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --teal: #e2231a;
+  --teal2: rgba(226,35,26,.18);
+  --orange: #ffd400;
+  --cream: #f3f1ec;
+  --dark: #0a0b0f;
+}
+
+html { scroll-behavior: auto; }
+body { background: var(--dark); color: var(--cream); overflow-x: hidden; font-family: 'Space Grotesk', sans-serif; }
+
+/* ── scroll space ── */
+#scroller { height: 600vh; position: relative; }
+
+/* ── sticky canvas ── */
+#canvas {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: var(--dark);
+}
+
+/* ── perspective stage — no overflow:hidden here ── */
+#stage {
+  position: absolute;
+  inset: 0;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+/* ── scenes ── */
+.scene {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* ── vignette ── */
+#canvas::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, transparent 25%, rgba(0,0,0,.82) 100%);
+  pointer-events: none;
+  z-index: 900;
+}
+
+/* ── progress bar ── */
+#prog {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, transparent, var(--teal), var(--orange), transparent);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* ── corner brackets ── */
+.corner {
+  position: absolute;
+  width: 2.5rem; height: 2.5rem;
+  z-index: 800; pointer-events: none;
+}
+.tl { top:1.5rem; left:1.5rem; border-top:1px solid rgba(226,35,26,.35); border-left:1px solid rgba(226,35,26,.35); }
+.tr { top:1.5rem; right:1.5rem; border-top:1px solid rgba(255,212,0,.35); border-right:1px solid rgba(255,212,0,.35); }
+.bl { bottom:1.5rem; left:1.5rem; border-bottom:1px solid rgba(255,212,0,.35); border-left:1px solid rgba(255,212,0,.35); }
+.br { bottom:1.5rem; right:1.5rem; border-bottom:1px solid rgba(226,35,26,.35); border-right:1px solid rgba(226,35,26,.35); }
+
+/* ── scroll hint ── */
+#hint {
+  position: absolute;
+  bottom: 2.2rem; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: .55rem;
+  z-index: 800; pointer-events: none; transition: opacity .5s;
+}
+#hint span { font-size: .55rem; letter-spacing: .4em; text-transform: uppercase; color: rgba(226,35,26,.55); font-family:'JetBrains Mono',monospace; }
+.hline { width:1px; height:2.5rem; background:linear-gradient(to bottom,rgba(226,35,26,.6),transparent); animation:pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:.25} 50%{opacity:1} }
+
+/* ══════════════════════════════════════
+   HERO SCENE (S1) — centred, full bg
+══════════════════════════════════════ */
+#s1 { flex-direction: column; }
+
+#s1 .hero-bg {
+  position: absolute; inset: 0;
+  background: url('https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1600&q=80') center/cover no-repeat;
+  opacity: .16;
+  z-index: 0;
+}
+#s1 .hero-overlay {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 70% at 50% 55%, rgba(48,14,12,.55) 0%, rgba(10,11,15,.96) 75%);
+  z-index: 1;
+}
+#s1 .hero-content { position: relative; z-index: 2; text-align: center; }
+
+.hero-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .62rem; letter-spacing: .55em; text-transform: uppercase;
+  color: rgba(226,35,26,.6); margin-bottom: 1.2rem;
+}
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 11vw, 10rem);
+  font-weight: 400; color: var(--cream);
+  letter-spacing: .1em; text-transform: uppercase; line-height: 1;
+}
+.hero-title .accent{
+  background:linear-gradient(100deg, var(--teal), var(--orange) 80%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.hero-rule { width: 3.5rem; height: 1px; background: linear-gradient(90deg, var(--teal), var(--orange)); opacity: .7; margin: 1.6rem auto; }
+.hero-tag {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: .65rem; letter-spacing: .3em; text-transform: uppercase;
+  color: rgba(243,241,236,.4); line-height: 2.2;
+}
+
+/* ══════════════════════════════════════
+   COURSE CARD SCENES (S2–S4)
+══════════════════════════════════════ */
+.card-stage {
+  position: relative;
+  z-index: 2;
+  perspective: 1600px;
+}
+
+.course-card {
+  position: relative;
+  width: min(400px, 84vw);
+  border-radius: 1.6rem;
+  padding: 1.3rem 1.3rem 1.9rem;
+  background: linear-gradient(160deg, rgba(255,255,255,.10), rgba(255,255,255,.02) 45%, rgba(255,255,255,.035));
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow:
+    0 50px 90px -30px rgba(0,0,0,.75),
+    inset 0 1px 0 rgba(255,255,255,.22),
+    inset 0 -30px 50px -30px rgba(0,0,0,.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transform: perspective(1400px) rotateX(6deg) rotateY(-8deg) scale(1);
+  transition: transform .6s cubic-bezier(.2,.8,.2,1);
+  overflow: hidden;
+}
+.course-card:hover {
+  transform: perspective(1400px) rotateX(0deg) rotateY(0deg) translateY(-10px) scale(1.02);
+}
+/* glossy diagonal sheen */
+.course-card::before {
+  content: '';
+  position: absolute;
+  top: -70%; left: -35%;
+  width: 65%; height: 240%;
+  background: linear-gradient(120deg, rgba(255,255,255,.4), rgba(255,255,255,0) 60%);
+  transform: rotate(18deg);
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: .55;
+  z-index: 3;
+}
+/* colored rim glow — teal or orange per card */
+.course-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 1px rgba(226,35,26,.25), 0 0 60px -10px rgba(226,35,26,.25);
+  pointer-events: none;
+  z-index: 0;
+}
+.course-card.orange::after {
+  box-shadow: 0 0 0 1px rgba(255,212,0,.28), 0 0 60px -10px rgba(255,212,0,.28);
+}
+
+.card-media {
+  position: relative;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+.card-media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: brightness(.78) saturate(1.1);
+}
+.card-media iframe,
+.card-media video {
+  width: 100%; height: 100%;
+  border: 0;
+  display: block;
+  object-fit: cover;
+  pointer-events: auto;
+}
+.card-media::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 45%, rgba(10,11,15,.75));
+  pointer-events: none;
+}
+.card-num {
+  position: absolute; top: .7rem; left: .8rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .62rem; letter-spacing: .25em;
+  color: rgba(243,241,236,.85);
+  background: rgba(10,11,15,.55);
+  border: 1px solid rgba(255,255,255,.2);
+  padding: .3rem .55rem;
+  z-index: 2;
+}
+
+.card-body { position: relative; z-index: 1; text-align: left; }
+.card-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .56rem; letter-spacing: .4em; text-transform: uppercase;
+  color: rgba(226,35,26,.7); margin-bottom: .7rem;
+}
+.course-card.orange .card-eyebrow { color: rgba(255,212,0,.75); }
+.card-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+  font-weight: 400; color: var(--cream);
+  letter-spacing: .02em; line-height: 1.08;
+  text-transform: uppercase;
+  margin-bottom: .9rem;
+}
+.card-title em { font-style: normal; color: var(--orange); }
+.course-card.orange .card-title em { color: var(--teal); }
+.card-desc {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: .8rem; letter-spacing: .01em; line-height: 1.75;
+  color: rgba(243,241,236,.55);
+  margin-bottom: 1.6rem;
+}
+
+.card-btn {
+  width: 100%;
+  padding: .85rem 1.4rem;
+  border: 1px solid var(--teal);
+  background: transparent;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .62rem; letter-spacing: .25em; text-transform: uppercase;
+  color: var(--teal);
+  cursor: pointer;
+  position: relative; overflow: hidden; transition: color .35s;
+}
+.course-card.orange .card-btn { border-color: var(--orange); color: var(--orange); }
+.card-btn::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(120deg, var(--teal), var(--orange));
+  transform: translateX(-101%);
+  transition: transform .35s ease; z-index: 0;
+}
+.course-card.orange .card-btn::before { background: linear-gradient(120deg, var(--orange), var(--teal)); }
+.card-btn:hover { color: var(--dark); }
+.card-btn:hover::before { transform: translateX(0); }
+.card-btn span { position: relative; z-index: 1; }
+
+/* ══════════════════════════════════════
+   OUTRO SCENE (S5)
+══════════════════════════════════════ */
+#s5 {
+  flex-direction: column;
+  text-align: center;
+}
+#s5 .outro-bg {
+  position: absolute; inset: 0;
+  background: url('https://images.unsplash.com/photo-1620121692029-d088224ddc74?w=1600&q=80') center/cover no-repeat;
+  opacity: .14; z-index: 0;
+}
+#s5 .outro-overlay {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 70% 65% at 50% 50%, rgba(40,16,13,.7) 0%, rgba(10,11,15,.97) 75%);
+  z-index: 1;
+}
+#s5 .outro-content { position: relative; z-index: 2; }
+
+.outro-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.8rem, 6.5vw, 6rem);
+  font-weight: 400; color: var(--cream); line-height: 1.05;
+  text-transform: uppercase; letter-spacing: .02em;
+}
+.outro-title em { font-style: normal; background:linear-gradient(100deg,var(--teal),var(--orange)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.outro-rule { width: 3rem; height:1px; background:linear-gradient(90deg,var(--teal),var(--orange)); opacity:.6; margin:1.5rem auto; }
+.outro-sub {
+  font-family:'Space Grotesk',sans-serif;
+  font-size: .85rem; letter-spacing:.04em;
+  color: rgba(243,241,236,.45); line-height: 1.8;
+}
+
+.cta {
+  display: inline-block; margin-top: 2.5rem;
+  padding: .95rem 3rem;
+  border: 1px solid var(--teal);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .65rem; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--teal); text-decoration: none;
+  position: relative; overflow: hidden; transition: color .35s;
+}
+.cta::before {
+  content:''; position:absolute; inset:0;
+  background: linear-gradient(120deg, var(--teal), var(--orange));
+  transform: translateX(-101%);
+  transition: transform .35s ease; z-index:0;
+}
+.cta:hover { color: var(--dark); }
+.cta:hover::before { transform: translateX(0); }
+.cta span { position:relative; z-index:1; }
+
+.outro-form {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .8rem;
+  width: min(560px, 86vw);
+}
+.outro-form input {
+  flex: 1 1 150px;
+  background: rgba(243,241,236,.04);
+  border: 1px solid rgba(226,35,26,.28);
+  color: var(--cream);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .02em;
+  padding: .85rem 1.1rem;
+  outline: none;
+  transition: border-color .3s, background .3s;
+}
+.outro-form input::placeholder { color: rgba(243,241,236,.35); }
+.outro-form input:focus {
+  border-color: var(--orange);
+  background: rgba(243,241,236,.07);
+}
+.outro-form .submit-btn {
+  flex: 1 1 100%;
+  margin-top: .4rem;
+  padding: .95rem 3rem;
+  border: 1px solid var(--teal);
+  background: transparent;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .65rem; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--teal);
+  cursor: pointer;
+  position: relative; overflow: hidden; transition: color .35s;
+}
+.outro-form .submit-btn::before {
+  content:''; position:absolute; inset:0;
+  background: linear-gradient(120deg, var(--teal), var(--orange));
+  transform: translateX(-101%);
+  transition: transform .35s ease; z-index:0;
+}
+.outro-form .submit-btn:hover { color: var(--dark); }
+.outro-form .submit-btn:hover::before { transform: translateX(0); }
+.outro-form .submit-btn span { position:relative; z-index:1; }
+.form-note {
+  font-family:'JetBrains Mono',monospace;
+  font-size: .58rem; letter-spacing:.15em;
+  color: rgba(226,35,26,.6);
+  margin-top: .9rem;
+  min-height: .9rem;
+}
+
+/* scene bg glows */
+.sg { position:absolute; inset:0; pointer-events:none; z-index:0; }
+.scene > *:not(.sg):not(.hero-bg):not(.hero-overlay):not(.outro-bg):not(.outro-overlay) { position:relative; }
+
+/* rings */
+.ring {
+  position:absolute; border-radius:50%;
+  border:1px solid rgba(226,35,26,.045);
+  left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  pointer-events:none; z-index:5;
+}
+.ring:nth-child(odd){ border-color: rgba(255,212,0,.04); }
+
+@media (max-width: 860px){
+  .course-card{ width: 88vw; padding: 1.1rem 1.1rem 1.6rem; }
+  .card-title{ font-size: clamp(1.5rem, 6vw, 2rem); }
+}
+
+/* ── touch devices never fire :hover, so 3D-tilted cards would stay
+   permanently skewed off-centre; flatten them so they sit straight ── */
+@media (hover: none) {
+  .course-card,
+  .ph-course-card,
+  .ph-star-card {
+    transform: none !important;
+  }
+}
+.card-stage { display: flex; justify-content: center; align-items: center; width: 100%; }
+
+/* ══════════════════════════════════════
+   POST-DEPTH-EFFECT: sticky hero + sections
+   that slide up over it (2nd scroll effect,
+   begins once the 600vh depth sequence ends)
+══════════════════════════════════════ */
+
+#post-hero {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 8vw;
+  z-index: 0;
+  overflow: hidden;
+  background: var(--dark);
+}
+#post-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 70% at 70% 50%, rgba(226,35,26,.14) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(255,212,0,.12) 0%, transparent 60%);
+  z-index: 0;
+}
+#post-hero .ph-noise {
+  position: absolute; inset: 0;
+  opacity: .035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px;
+  z-index: 1;
+}
+.ph-content { position: relative; z-index: 2; }
+.ph-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .7rem; font-weight: 500; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: .75rem;
+}
+.ph-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--teal); }
+.ph-content h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400; font-size: clamp(3rem, 9vw, 7.5rem);
+  line-height: .95; letter-spacing: .01em; text-transform: uppercase; max-width: 14ch;
+  color: var(--cream);
+}
+.ph-content h2 em { font-style: normal; color: var(--orange); }
+.ph-sub {
+  margin-top: 2rem; font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem; color: rgba(243,241,236,.5); max-width: 38ch; line-height: 1.65;
+}
+.ph-cta { margin-top: 3rem; display: flex; gap: 1rem; align-items: center; }
+.ph-btn {
+  padding: .85rem 2rem; border-radius: 100px;
+  font-family: 'JetBrains Mono', monospace; font-size: .78rem; font-weight: 500;
+  cursor: pointer; transition: transform .2s, opacity .2s;
+  border: none; letter-spacing: .08em; text-transform: uppercase;
+}
+.ph-btn:hover { transform: translateY(-2px); opacity: .9; }
+.ph-btn-primary { background: var(--teal); color: #0a0a0f; }
+.ph-btn-ghost { background: transparent; color: var(--cream); border: 1px solid rgba(255,255,255,.16); }
+
+.ph-badge {
+  position: absolute; bottom: 2.5rem; right: 8vw;
+  width: 120px; height: 120px; z-index: 2;
+  animation: ph-spin 18s linear infinite;
+}
+.ph-badge svg text {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  fill: rgba(243,241,236,.4); letter-spacing: .18em; text-transform: uppercase;
+}
+.ph-badge-dot {
+  position: absolute; inset: 50%; width: 8px; height: 8px; margin: -4px;
+  background: var(--orange); border-radius: 50%;
+}
+@keyframes ph-spin { to { transform: rotate(360deg); } }
+
+.ph-scroll-hint {
+  position: absolute; bottom: 2.5rem; left: 8vw; z-index: 2;
+  display: flex; align-items: center; gap: .6rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .65rem; letter-spacing: .2em; text-transform: uppercase;
+  color: rgba(243,241,236,.4);
+}
+.ph-scroll-line { width: 40px; height: 1px; background: rgba(243,241,236,.25); position: relative; overflow: hidden; }
+.ph-scroll-line::after {
+  content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+  background: var(--teal); animation: ph-slide 1.8s ease-in-out infinite;
+}
+@keyframes ph-slide { to { left: 100%; } }
+
+/* wrapper that stacks + slides over the sticky hero */
+.ph-scroll-sections { position: relative; z-index: 10; }
+
+.ph-section {
+  position: relative; width: 100%;
+  padding: 3rem 8vw; border-radius: 28px 28px 0 0;
+}
+.ph-section + .ph-section { border-radius: 0; margin-top: -1px; }
+
+.ph-section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 400;
+  line-height: 1.05; letter-spacing: .02em; text-transform: uppercase; margin-bottom: .6rem;
+  color: var(--cream);
+}
+.ph-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.3rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase;
+  color: rgba(226,35,26,.85); margin-bottom: .7rem;
+}
+
+/* section 1: courses grid — 3D tilt cards, dark, teal/orange only */
+.ph-section-courses { background: var(--dark); }
+.ph-courses-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+  margin-top: 0; perspective: 1400px;
+}
+.ph-course-card {
+  position: relative;
+  padding: 0 0 2rem;
+  border: 1px solid rgba(255,255,255,.1);
+  background: linear-gradient(160deg, rgba(255,255,255,.06), rgba(255,255,255,.015) 45%);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transform: perspective(1000px) rotateX(5deg) rotateY(-6deg) scale(1);
+  transition: transform .5s cubic-bezier(.2,.8,.2,1), border-color .3s, box-shadow .3s;
+  box-shadow: 0 30px 60px -25px rgba(0,0,0,.6);
+}
+.ph-course-card:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-12px) scale(1.025);
+  box-shadow: 0 45px 80px -25px rgba(0,0,0,.75);
+}
+.ph-course-card:nth-child(odd) { border-color: rgba(226,35,26,.3); }
+.ph-course-card:nth-child(even) { border-color: rgba(255,212,0,.3); }
+.ph-course-card:nth-child(odd):hover { border-color: rgba(226,35,26,.6); }
+.ph-course-card:nth-child(even):hover { border-color: rgba(255,212,0,.6); }
+/* glossy diagonal sheen */
+.ph-course-card::before {
+  content: ''; position: absolute; top: -70%; left: -35%;
+  width: 65%; height: 240%;
+  background: linear-gradient(120deg, rgba(255,255,255,.35), rgba(255,255,255,0) 60%);
+  transform: rotate(18deg); pointer-events: none; mix-blend-mode: overlay; opacity: .5; z-index: 3;
+}
+.ph-course-pic {
+  position: relative;
+  aspect-ratio: 1/1;
+  margin-bottom: 1.6rem;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(160deg, rgba(226,35,26,.14), rgba(255,212,0,.08));
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.ph-course-card:nth-child(even) .ph-course-pic { background: linear-gradient(160deg, rgba(255,212,0,.14), rgba(226,35,26,.08)); }
+.ph-course-pic-icon { font-size: 2.6rem; color: rgba(243,241,236,.35); position: relative; z-index: 1; }
+.ph-course-pic video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(.75) saturate(1.05);
+  transition: transform .6s cubic-bezier(.2,.8,.2,1);
+}
+.ph-course-card:hover .ph-course-pic video { transform: scale(1.08); }
+.ph-course-pic::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(10,11,15,.7));
+  pointer-events: none;
+}
+.ph-course-body { padding: 0 1.8rem; position: relative; z-index: 1; }
+.ph-course-card h3 {
+  font-family: 'Bebas Neue', sans-serif; font-size: 1.85rem; font-weight: 400;
+  letter-spacing: .02em; text-transform: uppercase; margin-bottom: .65rem; color: var(--cream);
+}
+.ph-course-card p {
+  font-family: 'Space Grotesk', sans-serif; font-size: .92rem;
+  color: rgba(243,241,236,.55); line-height: 1.65; margin-bottom: 1.6rem;
+}
+.ph-course-cta { display: flex; gap: .7rem; }
+.ph-course-btn {
+  flex: 1;
+  padding: .8rem .9rem;
+  border-radius: 100px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace; font-size: .68rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase;
+  border: 1px solid var(--teal); color: var(--teal);
+  background: transparent; text-decoration: none; cursor: pointer;
+  transition: background .25s, color .25s;
+}
+.ph-course-card:nth-child(even) .ph-course-btn { border-color: var(--orange); color: var(--orange); }
+.ph-course-btn:hover { background: var(--teal); color: var(--dark); }
+.ph-course-card:nth-child(even) .ph-course-btn:hover { background: var(--orange); color: var(--dark); }
+.ph-course-btn-icon {
+  flex: 0 0 auto; width: 2.5rem; height: 2.5rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; font-size: 1.05rem;
+  border: 1px solid rgba(255,255,255,.18); color: var(--cream);
+  text-decoration: none; transition: border-color .25s, color .25s;
+}
+.ph-course-btn-icon:hover { border-color: var(--teal); color: var(--teal); }
+
+/* section 2: stats / results — small, dynamic count-up strip */
+.ph-section-stats {
+  background: var(--dark);
+  min-height: auto;
+  padding: 3rem 8vw;
+  border-top: 1px solid rgba(255,255,255,.06);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.ph-section-stats .ph-label,
+.ph-section-stats .ph-section-title { text-align: center; }
+.ph-section-stats .ph-section-title { margin-bottom: 1.4rem; }
+.ph-stats-row {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; margin-top: 0; max-width: 1000px; margin-inline: auto;
+}
+.ph-stat-item { text-align: center; }
+.ph-stat-num {
+  font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 400; color: var(--teal); line-height: 1;
+}
+.ph-stats-row .ph-stat-item:nth-child(even) .ph-stat-num { color: var(--orange); }
+.ph-stat-label {
+  font-family: 'JetBrains Mono', monospace; font-size: .62rem; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(243,241,236,.45); margin-top: .5rem;
+}
+
+/* section 2.5: student work — masonry gallery of portfolio pieces */
+.ph-section-work { background: var(--dark); }
+.ph-work-grid {
+  column-count: 4; column-gap: 1.5rem; margin-top: 0;
+}
+.ph-work-item {
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  cursor: pointer;
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), border-color .3s, box-shadow .35s;
+}
+.ph-work-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,.18);
+  box-shadow: 0 30px 50px -22px rgba(0,0,0,.65);
+}
+.ph-work-item .ph-work-media {
+  width: 100%; display: block; object-fit: cover;
+  filter: brightness(.82) saturate(1.05);
+  transition: transform .6s cubic-bezier(.2,.8,.2,1), filter .4s;
+  background: rgba(255,255,255,.03);
+}
+.ph-work-item:hover .ph-work-media { transform: scale(1.06); filter: brightness(.5) saturate(1.15); }
+.ph-work-item.h-tall .ph-work-media { aspect-ratio: 3 / 4; }
+.ph-work-item.h-square .ph-work-media { aspect-ratio: 1 / 1; }
+.ph-work-item.h-wide .ph-work-media { aspect-ratio: 4 / 3; }
+/* medium/category tag, top-left */
+.ph-work-tag {
+  position: absolute; top: .8rem; left: .8rem; z-index: 2;
+  padding: .3rem .65rem; border-radius: 100px;
+  background: rgba(10,11,15,.6); backdrop-filter: blur(4px);
+  border: 1px solid rgba(226,35,26,.4);
+  font-family: 'JetBrains Mono', monospace; font-size: .5rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--teal);
+}
+.ph-work-item:nth-child(even) .ph-work-tag { border-color: rgba(255,212,0,.4); color: var(--orange); }
+/* gradient + name/student overlay, bottom of frame */
+.ph-work-item::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(10,11,15,.94) 100%);
+  pointer-events: none; z-index: 1;
+}
+.ph-work-info { position: absolute; left: 1rem; right: 1rem; bottom: .9rem; z-index: 2; }
+.ph-work-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: .02em; text-transform: uppercase; color: var(--cream); }
+.ph-work-student { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .05em; text-transform: uppercase; color: rgba(243,241,236,.55); margin-top: .3rem; }
+.ph-work-cta { display: flex; justify-content: center; margin-top: 2.2rem; }
+
+/* attention-grabbing hover state for each project card */
+.ph-work-item { cursor: pointer; }
+.ph-work-item:hover {
+  border-color: rgba(226,35,26,.6);
+  box-shadow: 0 34px 65px -20px rgba(226,35,26,.4), 0 0 0 1px rgba(226,35,26,.35);
+}
+.ph-work-item:nth-child(even):hover {
+  border-color: rgba(255,212,0,.6);
+  box-shadow: 0 34px 65px -20px rgba(255,212,0,.35), 0 0 0 1px rgba(255,212,0,.3);
+}
+
+/* centered play button — invites a click/tap to watch the reel */
+.ph-work-play {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(.85);
+  width: 52px; height: 52px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,.12); backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.4);
+  opacity: 0; transition: opacity .3s, transform .3s, background .3s;
+  z-index: 2; pointer-events: none;
+}
+.ph-work-play::after {
+  content: ''; margin-left: 3px;
+  border-style: solid; border-width: 8px 0 8px 13px;
+  border-color: transparent transparent transparent var(--cream);
+}
+.ph-work-item:hover .ph-work-play { opacity: 1; transform: translate(-50%, -50%) scale(1); background: var(--teal); }
+.ph-work-item:nth-child(even):hover .ph-work-play { background: var(--orange); }
+
+/* "watch full work" link, always visible under the title/student line */
+.ph-work-watch {
+  display: inline-flex; align-items: center; gap: .35rem;
+  margin-top: .55rem;
+  font-family: 'JetBrains Mono', monospace; font-size: .58rem; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--teal); text-decoration: none;
+}
+.ph-work-item:nth-child(even) .ph-work-watch { color: var(--orange); }
+.ph-work-watch span { display: inline-block; transition: transform .25s; }
+.ph-work-watch:hover span { transform: translateX(3px); }
+
+/* featured reel — brighter border + pulsing ribbon so it stands out from the grid */
+.ph-work-item.featured {
+  border-color: rgba(255,212,0,.55);
+  box-shadow: 0 0 0 1px rgba(255,212,0,.25), 0 30px 60px -20px rgba(255,212,0,.3);
+}
+.ph-work-featured-badge {
+  position: absolute; top: .8rem; right: .8rem; z-index: 2;
+  padding: .3rem .7rem; border-radius: 100px;
+  background: var(--gold); color: #1a1300;
+  font-family: 'JetBrains Mono', monospace; font-size: .52rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+  animation: ph-work-pulse 2s ease-in-out infinite;
+}
+@keyframes ph-work-pulse {
+  0%, 100% { box-shadow: 0 0 12px rgba(255,212,0,.5); }
+  50% { box-shadow: 0 0 22px rgba(255,212,0,.85); }
+}
+
+/* live pulse dot next to the section label */
+.ph-label-live { display: flex; align-items: center; gap: .5rem; }
+.ph-live-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--teal);
+  box-shadow: 0 0 8px var(--teal);
+  animation: ph-work-live 1.6s ease-in-out infinite;
+}
+@keyframes ph-work-live { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+@media (max-width: 900px) { .ph-work-grid { column-count: 2; } }
+@media (max-width: 560px) { .ph-work-grid { column-count: 1; } }
+
+/* section 3: people grid — reused for Star Students & Recent Placements */
+.ph-section-people { background: var(--dark); }
+.ph-people-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 0; }
+.ph-people-grid.compact { grid-template-columns: repeat(5, 1fr); }
+.ph-person-card {
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 1rem;
+  padding: 1.6rem 1.3rem;
+  background: linear-gradient(160deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+  text-align: center;
+}
+.ph-person-avatar {
+  width: 56px; height: 56px; margin: 0 auto .9rem;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: .04em;
+  background: rgba(226,35,26,.12); color: var(--teal);
+  border: 1px solid rgba(226,35,26,.35);
+}
+.ph-person-card:nth-child(even) .ph-person-avatar {
+  background: rgba(255,212,0,.12); color: var(--orange); border-color: rgba(255,212,0,.35);
+}
+.ph-person-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; letter-spacing: .02em; text-transform: uppercase; color: var(--cream); }
+.ph-person-role { font-family: 'JetBrains Mono', monospace; font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; color: rgba(243,241,236,.45); margin-top: .35rem; line-height: 1.5; }
+
+/* ── Star Students — glossy 3D carousel, the showcase moment ── */
+.ph-stars-wrap { position: relative; }
+.ph-stars-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  perspective: 1600px;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-padding-left: 8vw;
+  margin: 0 -8vw;
+  padding: .75rem 8vw 2rem;
+  -ms-overflow-style: none; scrollbar-width: none;
+}
+.ph-stars-grid::-webkit-scrollbar { display: none; }
+.ph-star-card {
+  position: relative;
+  flex: 0 0 clamp(320px, 46vw, 560px);
+  scroll-snap-align: start;
+  border: 1px solid rgba(226,35,26,.28);
+  border-radius: 1.6rem;
+  background: linear-gradient(160deg, rgba(255,255,255,.09), rgba(255,255,255,.015) 55%);
+  text-align: left;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1.8rem;
+  transform: perspective(1000px) rotateX(4deg) rotateY(-3deg) scale(1);
+  transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s, border-color .35s;
+  box-shadow: 0 30px 55px -22px rgba(0,0,0,.65), inset 0 1px 0 rgba(255,255,255,.06);
+}
+.ph-star-card:nth-child(even) { border-color: rgba(255,212,0,.28); }
+.ph-star-card:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-10px) scale(1.02);
+  box-shadow: 0 45px 80px -22px rgba(226,35,26,.32);
+  border-color: rgba(226,35,26,.55);
+}
+.ph-star-card:nth-child(even):hover { box-shadow: 0 45px 80px -22px rgba(255,212,0,.32); border-color: rgba(255,212,0,.55); }
+/* glossy diagonal sheen */
+.ph-star-card::before {
+  content: ''; position: absolute; top: -70%; left: -35%;
+  width: 65%; height: 240%;
+  background: linear-gradient(120deg, rgba(255,255,255,.4), rgba(255,255,255,0) 60%);
+  transform: rotate(18deg); pointer-events: none; mix-blend-mode: overlay; opacity: .55; z-index: 2;
+}
+/* star badge, top corner */
+.ph-star-card::after {
+  content: '★'; position: absolute; top: 1rem; right: 1.2rem;
+  font-size: 1rem; color: rgba(226,35,26,.5); z-index: 1;
+}
+.ph-star-card:nth-child(even)::after { color: rgba(255,212,0,.5); }
+
+/* photo slot — swap the background-image for a real headshot per student */
+.ph-star-photo {
+  position: relative;
+  flex: 0 0 140px;
+  width: 140px; height: 140px;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  background: radial-gradient(circle at 35% 30%, rgba(226,35,26,.35), rgba(226,35,26,.08)) , var(--dark);
+  background-blend-mode: screen;
+  border: 1px solid rgba(226,35,26,.45);
+  box-shadow: 0 14px 28px -10px rgba(226,35,26,.5), inset 0 1px 1px rgba(255,255,255,.2);
+  z-index: 1;
+}
+.ph-star-card:nth-child(even) .ph-star-photo {
+  background: radial-gradient(circle at 35% 30%, rgba(255,212,0,.35), rgba(255,212,0,.08)), var(--dark);
+  border-color: rgba(255,212,0,.45);
+  box-shadow: 0 14px 28px -10px rgba(255,212,0,.5), inset 0 1px 1px rgba(255,255,255,.2);
+}
+.ph-star-photo img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  display: block;
+}
+.ph-star-photo .ph-star-initials {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif; font-size: 2.3rem; letter-spacing: .04em;
+  color: var(--teal);
+}
+.ph-star-card:nth-child(even) .ph-star-initials { color: var(--orange); }
+
+.ph-star-body { position: relative; z-index: 1; flex: 1 1 auto; min-width: 0; }
+.ph-star-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: .02em; text-transform: uppercase; color: var(--cream); }
+.ph-star-role { font-family: 'JetBrains Mono', monospace; font-size: .64rem; letter-spacing: .06em; text-transform: uppercase; color: rgba(243,241,236,.5); margin-top: .35rem; line-height: 1.5; }
+.ph-star-meta { display: flex; gap: 1.6rem; margin-top: 1.1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,.1); }
+.ph-star-meta-item { min-width: 0; }
+.ph-star-meta-label { font-family: 'JetBrains Mono', monospace; font-size: .57rem; letter-spacing: .1em; text-transform: uppercase; color: rgba(243,241,236,.4); }
+.ph-star-meta-value {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: .92rem;
+  color: var(--teal); margin-top: .25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.ph-star-card:nth-child(even) .ph-star-meta-value { color: var(--orange); }
+
+/* nav arrows, floating over any carousel */
+.ph-carousel-arrow {
+  position: absolute; top: 42%; transform: translateY(-50%);
+  width: 48px; height: 48px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(10,11,15,.6); backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.15); color: var(--cream);
+  font-size: 1.4rem; line-height: 1; cursor: pointer;
+  transition: border-color .25s, color .25s, transform .25s;
+  z-index: 5;
+}
+.ph-carousel-arrow:hover { border-color: var(--teal); color: var(--teal); transform: translateY(-50%) scale(1.08); }
+.ph-carousel-arrow.prev { left: 1vw; }
+.ph-carousel-arrow.next { right: 1vw; }
+
+/* progress dots, shared by any carousel */
+.ph-carousel-dots { display: flex; justify-content: center; gap: .5rem; margin-top: -.5rem; }
+.ph-carousel-dot {
+  width: 8px; height: 8px; border-radius: 100px; padding: 0;
+  border: none; background: rgba(255,255,255,.22); cursor: pointer;
+  transition: width .3s, background .3s;
+}
+.ph-carousel-dot.active { width: 24px; background: var(--teal); }
+
+@media (max-width: 860px) {
+  .ph-star-card { transform: none; }
+  .ph-star-card:hover { transform: translateY(-6px); }
+}
+@media (max-width: 600px) {
+  .ph-star-card { flex: 0 0 84vw; flex-direction: column; text-align: center; align-items: center; padding: 1.5rem; }
+  .ph-star-meta { justify-content: center; }
+  .ph-carousel-arrow { display: none; }
+}
+
+/* ── Recent Placements — flat "ID badge" carousel, a different look on purpose ── */
+.ph-placements-wrap { position: relative; }
+.ph-placements-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-padding-left: 8vw;
+  margin: 0 -8vw;
+  padding: .75rem 8vw 2rem;
+  -ms-overflow-style: none; scrollbar-width: none;
+}
+.ph-placements-grid::-webkit-scrollbar { display: none; }
+.ph-placement-card {
+  position: relative;
+  flex: 0 0 clamp(260px, 24vw, 300px);
+  scroll-snap-align: start;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+  border-top: 4px solid var(--teal);
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), border-color .3s, background .3s, box-shadow .35s;
+}
+.ph-placement-card:nth-child(even) { border-top-color: var(--orange); }
+.ph-placement-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,.055);
+  border-color: rgba(255,255,255,.16);
+  box-shadow: 0 30px 50px -22px rgba(0,0,0,.6);
+}
+/* "just placed" tag, floats over the photo */
+.ph-placement-tag {
+  position: absolute; top: .9rem; right: .9rem; z-index: 2;
+  display: flex; align-items: center; gap: .4rem;
+  padding: .35rem .7rem .35rem .55rem;
+  background: rgba(10,11,15,.65); backdrop-filter: blur(4px);
+  border: 1px solid rgba(226,35,26,.4);
+  border-radius: 100px;
+  font-family: 'JetBrains Mono', monospace; font-size: .54rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--teal);
+}
+.ph-placement-card:nth-child(even) .ph-placement-tag { border-color: rgba(255,212,0,.4); color: var(--orange); }
+.ph-placement-dot {
+  width: 5px; height: 5px; border-radius: 50%; background: var(--teal);
+  box-shadow: 0 0 6px var(--teal);
+  animation: ph-pulse-dot 1.6s ease-in-out infinite;
+}
+.ph-placement-card:nth-child(even) .ph-placement-dot { background: var(--orange); box-shadow: 0 0 6px var(--orange); }
+@keyframes ph-pulse-dot { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+
+/* photo — the main event, big and clearly visible */
+.ph-placement-photo {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(160deg, rgba(226,35,26,.22), rgba(226,35,26,.05));
+}
+.ph-placement-card:nth-child(even) .ph-placement-photo {
+  background: linear-gradient(160deg, rgba(255,212,0,.22), rgba(255,212,0,.05));
+}
+.ph-placement-photo img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover; object-position: top center;
+  display: block;
+}
+.ph-placement-photo .ph-placement-initials {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif; font-size: 3rem; letter-spacing: .04em;
+  color: rgba(226,35,26,.55);
+}
+.ph-placement-card:nth-child(even) .ph-placement-initials { color: rgba(255,212,0,.55); }
+/* gradient so the name reads clearly over any photo */
+.ph-placement-photo::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 45%, rgba(10,11,15,.92) 100%);
+  pointer-events: none;
+}
+.ph-placement-photo-info {
+  position: absolute; left: 1.1rem; right: 1.1rem; bottom: .9rem; z-index: 1;
+}
+.ph-placement-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: .02em; text-transform: uppercase; color: var(--cream); }
+.ph-placement-role { font-family: 'JetBrains Mono', monospace; font-size: .6rem; letter-spacing: .05em; text-transform: uppercase; color: rgba(243,241,236,.6); margin-top: .3rem; line-height: 1.5; }
+
+.ph-placement-body { padding: 1.1rem 1.3rem 1.4rem; }
+.ph-placement-footer { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.ph-placement-company {
+  font-family: 'Space Grotesk', sans-serif; font-size: .8rem; color: rgba(243,241,236,.75);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.ph-placement-package { font-family: 'JetBrains Mono', monospace; font-size: .7rem; color: var(--teal); flex: 0 0 auto; }
+.ph-placement-card:nth-child(even) .ph-placement-package { color: var(--orange); }
+@media (max-width: 600px) {
+  .ph-placement-card { flex: 0 0 68vw; }
+  .ph-carousel-arrow { display: none; }
+}
+
+/* section 4: testimonials — vertical video-reel carousel, dynamic scroll */
+.ph-section-testimonials { background: var(--dark); }
+.ph-testimonials-wrap { position: relative; }
+.ph-testimonials-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-padding-left: 8vw;
+  margin: 0 -8vw;
+  padding: .75rem 8vw 2rem;
+  -ms-overflow-style: none; scrollbar-width: none;
+}
+.ph-testimonials-grid::-webkit-scrollbar { display: none; }
+
+/* card shell — mirrors .ph-placement-card exactly */
+.ph-testimonial-card {
+  position: relative;
+  flex: 0 0 clamp(260px, 24vw, 300px);
+  scroll-snap-align: start;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+  border-top: 4px solid var(--teal);
+  cursor: pointer;
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), border-color .3s, background .3s, box-shadow .35s;
+}
+.ph-testimonial-card:nth-child(even) { border-top-color: var(--orange); }
+.ph-testimonial-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,.055);
+  border-color: rgba(255,255,255,.16);
+  box-shadow: 0 30px 50px -22px rgba(0,0,0,.6);
+}
+
+/* media panel — same 3:4 photo treatment as .ph-placement-photo */
+.ph-testimonial-media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(160deg, rgba(226,35,26,.22), rgba(226,35,26,.05));
+}
+.ph-testimonial-card:nth-child(even) .ph-testimonial-media {
+  background: linear-gradient(160deg, rgba(255,212,0,.22), rgba(255,212,0,.05));
+}
+.ph-testimonial-media video, .ph-testimonial-media img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  display: block;
+}
+.ph-testimonial-initials {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif; font-size: 3rem; letter-spacing: .04em;
+  color: rgba(226,35,26,.55);
+}
+.ph-testimonial-card:nth-child(even) .ph-testimonial-initials { color: rgba(255,212,0,.55); }
+/* gradient so the name reads clearly over any photo/video frame */
+.ph-testimonial-media::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 45%, rgba(10,11,15,.92) 100%);
+  pointer-events: none;
+}
+/* video badge, top-left of the media panel */
+.ph-testimonial-badge {
+  position: absolute; top: .9rem; left: .9rem; z-index: 2;
+  display: flex; align-items: center; gap: .3rem;
+  padding: .3rem .55rem; border-radius: 100px;
+  background: rgba(10,11,15,.6); backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,.15);
+  font-family: 'JetBrains Mono', monospace; font-size: .5rem; letter-spacing: .06em; text-transform: uppercase;
+  color: rgba(243,241,236,.75);
+}
+/* duration, bottom-right of the media panel */
+.ph-testimonial-duration {
+  position: absolute; bottom: .8rem; right: .8rem; z-index: 2;
+  padding: .18rem .45rem; border-radius: 4px;
+  background: rgba(10,11,15,.65);
+  font-family: 'JetBrains Mono', monospace; font-size: .55rem; letter-spacing: .03em;
+  color: rgba(243,241,236,.85);
+}
+/* centered play button */
+.ph-testimonial-play {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 52px; height: 52px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,.12); backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.4);
+  transition: transform .3s, background .3s;
+  z-index: 2;
+}
+.ph-testimonial-play::after {
+  content: ''; margin-left: 3px;
+  border-style: solid; border-width: 8px 0 8px 13px;
+  border-color: transparent transparent transparent var(--cream);
+}
+.ph-testimonial-card:hover .ph-testimonial-play { transform: translate(-50%, -50%) scale(1.1); background: var(--teal); }
+.ph-testimonial-card:nth-child(even):hover .ph-testimonial-play { background: var(--orange); }
+/* name + role overlay, bottom of the media panel — matches .ph-placement-photo-info */
+.ph-testimonial-photo-info {
+  position: absolute; left: 1.1rem; right: 1.1rem; bottom: .9rem; z-index: 1;
+}
+.ph-testimonial-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: .02em; text-transform: uppercase; color: var(--cream); }
+.ph-testimonial-role { font-family: 'JetBrains Mono', monospace; font-size: .6rem; letter-spacing: .05em; text-transform: uppercase; color: rgba(243,241,236,.6); margin-top: .3rem; line-height: 1.5; }
+
+/* body panel below the media — matches .ph-placement-body */
+.ph-testimonial-body { padding: 1.1rem 1.3rem 1.4rem; }
+.ph-testimonial-text {
+  font-family: 'Space Grotesk', sans-serif; font-size: .8rem; line-height: 1.55;
+  color: rgba(243,241,236,.78);
+  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+}
+@media (max-width: 600px) {
+  .ph-testimonial-card { flex: 0 0 68vw; }
+  .ph-carousel-arrow { display: none; }
+}
+
+/* section 4.5: FAQ — accordion */
+.ph-section-faq { background: var(--dark); }
+.ph-faq-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: .9rem; }
+.ph-faq-item {
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 1rem;
+  background: linear-gradient(160deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+  overflow: hidden;
+  transition: border-color .3s;
+}
+.ph-faq-item:nth-child(even) { }
+.ph-faq-item[open] { border-color: rgba(226,35,26,.35); }
+.ph-faq-item:nth-child(even)[open] { border-color: rgba(255,212,0,.35); }
+.ph-faq-q {
+  list-style: none;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1.3rem 1.5rem;
+  font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: .95rem;
+  color: var(--cream);
+}
+.ph-faq-q::-webkit-details-marker { display: none; }
+.ph-faq-icon {
+  flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%;
+  border: 1px solid rgba(226,35,26,.4); color: var(--teal);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; line-height: 1; transition: transform .3s, background .3s, color .3s;
+}
+.ph-faq-item:nth-child(even) .ph-faq-icon { border-color: rgba(255,212,0,.4); color: var(--orange); }
+.ph-faq-item[open] .ph-faq-icon { transform: rotate(45deg); background: var(--teal); color: var(--dark); }
+.ph-faq-item:nth-child(even)[open] .ph-faq-icon { background: var(--orange); color: var(--dark); }
+.ph-faq-a {
+  padding: 0 1.5rem 1.4rem;
+  font-family: 'Space Grotesk', sans-serif; font-size: .85rem; line-height: 1.7;
+  color: rgba(243,241,236,.55);
+}
+
+/* section 5: cta, accent — full-bleed animation-themed photo behind the CTA copy */
+.ph-section-cta {
+  position: relative;
+  color: var(--cream);
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; padding: 4rem 8vw;
+  min-height: 60vh;
+  overflow: hidden;
+  background: var(--dark);
+}
+.ph-cta-placeholder-img {
+  position: absolute; inset: 0;
+  z-index: 0;
+  background: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1600&q=80') center/cover no-repeat;
+}
+.ph-section-cta::after {
+  content: '';
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgba(10,11,15,.55), rgba(10,11,15,.8));
+}
+.ph-section-cta .ph-section-title,
+.ph-section-cta p,
+.ph-section-cta .ph-btn { position: relative; z-index: 2; }
+.ph-section-cta .ph-section-title { color: var(--cream); max-width: 14ch; margin: 0 auto 1.4rem; }
+.ph-section-cta p { font-family: 'Space Grotesk', sans-serif; color: rgba(243,241,236,.7); max-width: 44ch; margin: 0 auto 2rem; line-height: 1.6; }
+.ph-btn-dark { background: var(--gold); color: #fff; }
+
+/* section 6: footer */
+.ph-section-footer { background: var(--dark); color: rgba(243,241,236,.45); padding: 3rem 8vw; min-height: auto; border-top: 1px solid rgba(255,255,255,.06); }
+.ph-footer-cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.ph-footer-brand { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: .04em; color: var(--cream); text-transform: uppercase; margin-bottom: .8rem; }
+.ph-footer-desc { font-family: 'Space Grotesk', sans-serif; font-size: .8rem; line-height: 1.7; color: rgba(243,241,236,.45); max-width: 42ch; }
+.ph-footer-heading { font-family: 'JetBrains Mono', monospace; font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; color: var(--teal); margin-bottom: 1rem; }
+.ph-footer-links { display: flex; flex-direction: column; gap: .7rem; font-family: 'Space Grotesk', sans-serif; font-size: .82rem; }
+.ph-footer-links a { color: rgba(243,241,236,.55); text-decoration: none; }
+.ph-footer-links a:hover { color: var(--cream); }
+.ph-footer-inner {
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid rgba(255,255,255,.08); padding-top: 2rem; flex-wrap: wrap; gap: 1.5rem;
+}
+
+@media (max-width: 1300px) {
+  .ph-courses-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 860px) {
+  .ph-courses-grid { grid-template-columns: repeat(2, 1fr); }
+  .ph-people-grid, .ph-people-grid.compact { grid-template-columns: repeat(2, 1fr); }
+  .ph-footer-cols { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .ph-stats-row { grid-template-columns: repeat(2, 1fr); gap: 2rem 1.2rem; }
+  .ph-badge { display: none; }
+}
+
+/* ══════════════════════════════════════
+   NAV BAR + HAMBURGER MENU
+══════════════════════════════════════ */
+#site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  padding: 1.3rem clamp(1rem, 5vw, 2rem);
+  padding-left: max(clamp(1rem, 5vw, 2rem), env(safe-area-inset-left));
+  padding-right: max(clamp(1rem, 5vw, 2rem), env(safe-area-inset-right));
+  padding-top: max(1.3rem, env(safe-area-inset-top));
+  transition: background .4s ease, padding .4s ease, border-color .4s ease;
+  border-bottom: 1px solid transparent;
+}
+#site-nav.scrolled {
+  padding-top: max(.85rem, env(safe-area-inset-top));
+  padding-bottom: .85rem;
+  background: rgba(10,11,15,.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  text-decoration: none;
+  line-height: 1;
+  min-width: 0;
+}
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  flex-shrink: 0;
+  display: block;
+}
+.nav-logo-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .74rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgba(226,35,26,.75);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 480px) {
+  .nav-logo img { height: 32px; }
+  .nav-logo-sub { font-size: .6rem; letter-spacing: .16em; }
+  .nav-logo { gap: .45rem; }
+}
+@media (max-width: 360px) {
+  .nav-logo-sub { display: none; }
+}
+
+/* ── desktop inline links ── */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+}
+.nav-link-desktop {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .92rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: rgba(243,241,236,.82);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: .3rem;
+  white-space: nowrap;
+}
+.nav-link-desktop::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0%; height: 2px;
+  background: linear-gradient(90deg, var(--teal), var(--orange));
+  transition: width .3s cubic-bezier(.2,.8,.2,1);
+}
+.nav-link-desktop:hover { color: var(--cream); }
+.nav-link-desktop:hover::after { width: 100%; }
+
+.nav-cta-desktop {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: linear-gradient(100deg, var(--teal), var(--orange) 85%);
+  border: none;
+  border-radius: 999px;
+  padding: .75rem 1.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* ── hamburger is mobile-only; hidden on desktop ── */
+#nav-toggle { display: none; }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  #nav-toggle {
+    display: flex;
+  }
+}
+
+#nav-toggle {
+  position: relative;
+  width: 2.75rem; height: 2.75rem;
+  min-width: 44px; min-height: 44px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center; justify-content: center;
+  flex-direction: column;
+  gap: .32rem;
+  z-index: 1201;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: border-color .3s ease, background .3s ease;
+}
+#nav-toggle:hover, #nav-toggle:active { border-color: rgba(226,35,26,.5); }
+#nav-toggle span {
+  display: block;
+  width: 1.05rem; height: 1px;
+  background: var(--cream);
+  transition: transform .35s cubic-bezier(.4,0,.2,1), opacity .25s ease, background .3s ease;
+}
+#nav-toggle.open { border-color: rgba(255,212,0,.55); }
+#nav-toggle.open span:nth-child(1) { transform: translateY(4.5px) rotate(45deg); }
+#nav-toggle.open span:nth-child(2) { opacity: 0; }
+#nav-toggle.open span:nth-child(3) { transform: translateY(-4.5px) rotate(-45deg); }
+
+#nav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1150;
+  background: rgba(9,10,14,.98);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 8rem 8vw 3rem;
+  padding-top: max(8rem, calc(env(safe-area-inset-top) + 6rem));
+  padding-bottom: max(3rem, calc(env(safe-area-inset-bottom) + 1.5rem));
+  padding-left: max(8vw, env(safe-area-inset-left));
+  padding-right: max(8vw, env(safe-area-inset-right));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity .4s ease, transform .4s ease, visibility 0s linear .4s;
+}
+#nav-overlay::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 85% 0%, rgba(226,35,26,.08), transparent 60%),
+              radial-gradient(ellipse 60% 45% at 10% 100%, rgba(255,212,0,.07), transparent 60%);
+  pointer-events: none;
+}
+#nav-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity .4s ease, transform .4s ease, visibility 0s linear 0s;
+}
+
+.nav-overlay-inner {
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+  position: relative;
+}
+.nav-link {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.2rem, 9vw, 4.6rem);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--cream);
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  opacity: 1;
+  padding: .28rem 0;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity .25s ease, color .25s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: .12em;
+  width: 0%; height: 2px;
+  background: linear-gradient(90deg, var(--teal), var(--orange));
+  transition: width .35s cubic-bezier(.2,.8,.2,1);
+}
+.nav-link:hover { color: var(--teal); }
+.nav-link:hover::after { width: 100%; }
+
+.nav-overlay-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.nav-overlay-contact {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .78rem;
+  letter-spacing: .06em;
+  color: rgba(243,241,236,.55);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-overlay-contact:hover { color: var(--teal); }
+.nav-overlay-cta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .68rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: linear-gradient(100deg, var(--teal), var(--orange) 85%);
+  border: none;
+  padding: .85rem 1.6rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+body.nav-locked { overflow: hidden; height: 100%; }
+
+@media (max-width: 560px) {
+  #nav-overlay {
+    padding: 6.5rem 6vw 2.2rem;
+    padding-top: max(6.5rem, calc(env(safe-area-inset-top) + 5rem));
+    padding-bottom: max(2.2rem, calc(env(safe-area-inset-bottom) + 1.2rem));
+    padding-left: max(6vw, env(safe-area-inset-left));
+    padding-right: max(6vw, env(safe-area-inset-right));
+    gap: 1.4rem;
+  }
+  .nav-overlay-inner { gap: .3rem; }
+  .nav-overlay-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .9rem;
+  }
+  .nav-overlay-contact { text-align: center; }
+  .nav-overlay-cta { width: 100%; padding: 1rem 1.6rem; }
+}
+
+/* ── very small phones / short landscape viewports ── */
+@media (max-width: 360px) {
+  .nav-link { font-size: clamp(1.9rem, 11vw, 2.6rem); }
+}
+@media (max-height: 560px) {
+  #nav-overlay {
+    padding-top: max(4.5rem, calc(env(safe-area-inset-top) + 3.5rem));
+    padding-bottom: max(1.4rem, env(safe-area-inset-bottom));
+    gap: 1rem;
+  }
+  .nav-overlay-inner { gap: .15rem; }
+  .nav-link { font-size: clamp(1.7rem, 7vw, 2.4rem); padding: .12rem 0; }
+  .nav-overlay-footer { padding-top: .9rem; }
+}
+</style>
+</head>
+<body id="top">
+
+<nav id="site-nav">
+  <a href="#top" class="nav-logo">
+    <img src="data:image/webp;base64,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" alt="Arena Animation Banashankari">
+    <span class="nav-logo-sub">Banashankari</span>
+  </a>
+
+  <div class="nav-links">
+    <a href="#courses" class="nav-link-desktop">Courses</a>
+    <a href="#results" class="nav-link-desktop">Results</a>
+    <a href="#work" class="nav-link-desktop">Student Work</a>
+    <a href="#alumni" class="nav-link-desktop">Alumni</a>
+    <a href="#placements" class="nav-link-desktop">Placements</a>
+    <a href="#testimonials" class="nav-link-desktop">Testimonials</a>
+    <a href="#faq" class="nav-link-desktop">FAQ</a>
+    <a href="contact.html" class="nav-link-desktop">Contact</a>
+    <button class="nav-cta-desktop" type="button" id="nav-cta-desktop-btn">Book a Demo</button>
+  </div>
+
+  <button id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="nav-overlay" aria-hidden="true">
+  <div class="nav-overlay-inner">
+    <a href="#top" class="nav-link">Home</a>
+    <a href="#courses" class="nav-link">Courses</a>
+    <a href="#results" class="nav-link">Results</a>
+    <a href="#work" class="nav-link">Student Work</a>
+    <a href="#alumni" class="nav-link">Alumni</a>
+    <a href="#placements" class="nav-link">Placements</a>
+    <a href="#testimonials" class="nav-link">Testimonials</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+  <div class="nav-overlay-footer">
+    <a href="tel:+919341228440" class="nav-overlay-contact">+91 93412 28440</a>
+    <button class="nav-overlay-cta" type="button" id="nav-overlay-cta-btn">Book a free demo</button>
+  </div>
+</div>
+
+<div id="prog"></div>
+
+<div id="scroller">
+  <div id="canvas">
+    <div class="corner tl"></div>
+    <div class="corner tr"></div>
+    <div class="corner bl"></div>
+    <div class="corner br"></div>
+
+    <div id="hint">
+      <span>Scroll to explore</span>
+      <div class="hline"></div>
+    </div>
+
+    <div id="rings"></div>
+
+    <div id="stage">
+
+      <!-- ══ S1: HERO ══ -->
+      <div class="scene" id="s1">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-eyebrow">3D Animation · VFX · Game Design · Est. 1996</div>
+          <div class="hero-title">ARENA<br><span class="accent">ANIMATION</span></div>
+          <div class="hero-rule"></div>
+          <div class="hero-tag">
+            Turn imagination into motion —<br>
+            one frame, one render, one reel at a time.
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ S2: COURSE CARD — UI/UX ══ -->
+      <div class="scene" id="s2">
+        <div class="sg" style="background:radial-gradient(ellipse 80% 70% at 50% 55%,rgba(48,14,12,.5) 0%,transparent 65%)"></div>
+        <div class="card-stage">
+          <div class="course-card">
+            <div class="card-media">
+              <video
+                src="https://assets.mixkit.co/videos/13228/13228-360.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+              ></video>
+              <div class="card-num">01</div>
+            </div>
+            <div class="card-body">
+              <div class="card-eyebrow">Design Track</div>
+              <div class="card-title">UI/UX <em>Professional</em> Course</div>
+              <div class="card-desc">
+                Master interface design, prototyping and user research —
+                build digital products people love to use.
+              </div>
+              <button class="card-btn" type="button" data-course="UI/UX Professional Course"><span>Course Details</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ S3: COURSE CARD — GAME ART DESIGN ══ -->
+      <div class="scene" id="s3">
+        <div class="sg" style="background:radial-gradient(ellipse 80% 70% at 50% 45%,rgba(48,38,6,.5) 0%,transparent 65%)"></div>
+        <div class="card-stage">
+          <div class="course-card orange">
+            <div class="card-media">
+              <video
+                src="https://assets.mixkit.co/videos/23501/23501-360.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+              ></video>
+              <div class="card-num">02</div>
+
+            </div>
+            <div class="card-body">
+              <div class="card-eyebrow">Game Track</div>
+              <div class="card-title">Game Art <em>Design</em> Course</div>
+              <div class="card-desc">
+                Craft characters, environments and concept art
+                for the worlds players will remember.
+              </div>
+              <button class="card-btn" type="button" data-course="Game Art Design Course"><span>Course Details</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ S4: COURSE CARD — ANIMATION PRIME ══ -->
+      <div class="scene" id="s4">
+        <div class="sg" style="background:radial-gradient(ellipse 80% 70% at 50% 50%,rgba(40,12,12,.5) 0%,transparent 65%)"></div>
+        <div class="card-stage">
+          <div class="course-card">
+            <div class="card-media">
+              <video
+                src="https://assets.mixkit.co/videos/18052/18052-360.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+              ></video>
+              <div class="card-num">03</div>
+            </div>
+            <div class="card-body">
+              <div class="card-eyebrow">Animation Track</div>
+              <div class="card-title">Animation <em>Prime</em></div>
+              <div class="card-desc">
+                Go from rig to render — our flagship program in
+                3D animation, motion and storytelling.
+              </div>
+              <button class="card-btn" type="button" data-course="Animation Prime"><span>Course Details</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ S5: OUTRO ══ -->
+      <div class="scene" id="s5">
+        <div class="outro-bg"></div>
+        <div class="outro-overlay"></div>
+        <div class="outro-content">
+          <div class="hero-eyebrow" style="margin-bottom:1.2rem">Begin Your Reel</div>
+          <div class="outro-title">Your story,<br>our <em>canvas</em></div>
+          <div class="outro-rule"></div>
+          <div class="outro-sub">Let's turn your imagination into a career in animation, VFX or game design.</div>
+          <form class="outro-form" id="demo-form">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <button type="submit" class="submit-btn"><span>Book a Free Demo Class</span></button>
+          </form>
+          <div class="form-note" id="form-note"></div>
+        </div>
+      </div>
+
+    </div><!-- /stage -->
+  </div><!-- /canvas -->
+</div><!-- /scroller -->
+
+<!-- ══════════════════════════════════════
+     EFFECT 2: sticky hero that scales/fades
+     under a stack of sections. Begins the
+     instant the 600vh depth sequence above
+     finishes (this hero starts pinning right
+     where #scroller ends).
+══════════════════════════════════════ -->
+
+<section id="post-hero">
+  <div class="ph-noise"></div>
+
+  <div class="ph-content">
+    <p class="ph-eyebrow">The Next Chapter</p>
+    <h2>Your reel<br>starts <em>here.</em></h2>
+    <p class="ph-sub">From first sketch to final render — a career track built with studios, taught by artists who ship.</p>
+    <div class="ph-cta">
+      <button class="ph-btn ph-btn-primary">Enroll now</button>
+      <button class="ph-btn ph-btn-ghost">Watch showreel →</button>
+    </div>
+  </div>
+
+  <div class="ph-badge">
+    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <path id="ph-circle-path" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none"/>
+      <text><textPath href="#ph-circle-path">✦ scroll to explore ✦ scroll to explore ✦</textPath></text>
+    </svg>
+    <div class="ph-badge-dot"></div>
+  </div>
+
+  <div class="ph-scroll-hint">
+    <div class="ph-scroll-line"></div>
+    scroll
+  </div>
+</section>
+
+<div class="ph-scroll-sections">
+
+  <section class="ph-section ph-section-courses" id="courses">
+    <p class="ph-label">Our Courses</p>
+    <h2 class="ph-section-title">Explore our creative<br>career-ready courses.</h2>
+    <div class="ph-courses-grid">
+      <div class="ph-course-card">
+        <div class="ph-course-pic">
+          <video src="https://assets.mixkit.co/videos/31491/31491-360.mp4" autoplay muted loop playsinline preload="auto"></video>
+        </div>
+        <div class="ph-course-body">
+          <h3>Animation</h3>
+          <p>2D/3D animation, rigging &amp; storytelling for films, ads and OTT.</p>
+          <div class="ph-course-cta">
+            <button class="ph-course-btn" type="button" data-course="Animation">Book Demo</button>
+            <a class="ph-course-btn-icon" href="tel:+919341228440" aria-label="Call about Animation course">☎</a>
+          </div>
+        </div>
+      </div>
+      <div class="ph-course-card">
+        <div class="ph-course-pic">
+          <video src="https://assets.mixkit.co/videos/12262/12262-360.mp4" autoplay muted loop playsinline preload="auto"></video>
+        </div>
+        <div class="ph-course-body">
+          <h3>Visual Effects</h3>
+          <p>Compositing, motion tracking, CGI and simulation for studio pipelines.</p>
+          <div class="ph-course-cta">
+            <button class="ph-course-btn" type="button" data-course="Visual Effects">Book Demo</button>
+            <a class="ph-course-btn-icon" href="tel:+919341228440" aria-label="Call about Visual Effects course">☎</a>
+          </div>
+        </div>
+      </div>
+      <div class="ph-course-card">
+        <div class="ph-course-pic">
+          <video src="https://assets.mixkit.co/videos/17684/17684-720.mp4" autoplay muted loop playsinline preload="auto"></video>
+        </div>
+        <div class="ph-course-body">
+          <h3>Game Design</h3>
+          <p>Interactive worlds using Unreal, Unity and real-time 3D workflows.</p>
+          <div class="ph-course-cta">
+            <button class="ph-course-btn" type="button" data-course="Game Design">Book Demo</button>
+            <a class="ph-course-btn-icon" href="tel:+919341228440" aria-label="Call about Game Design course">☎</a>
+          </div>
+        </div>
+      </div>
+      <div class="ph-course-card">
+        <div class="ph-course-pic">
+          <video src="https://assets.mixkit.co/videos/99786/99786-360.mp4" autoplay muted loop playsinline preload="auto"></video>
+        </div>
+        <div class="ph-course-body">
+          <h3>Digital Design</h3>
+          <p>Graphic design, video editing, motion graphics and UI/UX with AI tools.</p>
+          <div class="ph-course-cta">
+            <button class="ph-course-btn" type="button" data-course="Digital Design">Book Demo</button>
+            <a class="ph-course-btn-icon" href="tel:+919341228440" aria-label="Call about Digital Design course">☎</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ph-section ph-section-stats" id="results">
+    <p class="ph-label" style="color: rgba(243,241,236,.75)">Our Results</p>
+    <h2 class="ph-section-title">30 years of placing students,<br>not just training them.</h2>
+    <div class="ph-stats-row">
+      <div class="ph-stat-item">
+        <div class="ph-stat-num" data-count-to="18" data-suffix="k+">0</div>
+        <div class="ph-stat-label">Students Trained &amp; Placed</div>
+      </div>
+      <div class="ph-stat-item">
+        <div class="ph-stat-num" data-count-to="100" data-suffix="%">0</div>
+        <div class="ph-stat-label">Placement Success Rate</div>
+      </div>
+      <div class="ph-stat-item">
+        <div class="ph-stat-num" data-count-to="50" data-suffix="+">0</div>
+        <div class="ph-stat-label">Expert Mentors</div>
+      </div>
+      <div class="ph-stat-item">
+        <div class="ph-stat-num" data-count-to="30" data-suffix="+">0</div>
+        <div class="ph-stat-label">Years of Excellence</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ph-section ph-section-work" id="work">
+    <p class="ph-label ph-label-live"><span class="ph-live-dot"></span>Student Work</p>
+    <h2 class="ph-section-title">From the studio floor,<br>not the brochure.</h2>
+    <div class="ph-work-grid">
+      <div class="ph-work-item h-tall">
+        <video class="ph-work-media" poster="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=700&q=80" muted loop playsinline preload="none">
+          <source src="https://assets.mixkit.co/videos/31491/31491-360.mp4" type="video/mp4">
+        </video>
+        <div class="ph-work-tag">3D Render</div>
+        <div class="ph-work-play" aria-hidden="true"></div>
+        <div class="ph-work-info">
+          <div class="ph-work-title">Neon Circuit</div>
+          <div class="ph-work-student">Adityaragavan V — Motion Graphic Design</div>
+          <a class="ph-work-watch" href="#" target="_blank" rel="noopener" data-project="Neon Circuit">Watch full work <span>→</span></a>
+        </div>
+      </div>
+      <div class="ph-work-item h-square">
+        <video class="ph-work-media" poster="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=700&q=80" muted loop playsinline preload="none">
+          <source src="https://assets.mixkit.co/videos/99786/99786-360.mp4" type="video/mp4">
+        </video>
+        <div class="ph-work-tag">Illustration</div>
+        <div class="ph-work-play" aria-hidden="true"></div>
+        <div class="ph-work-info">
+          <div class="ph-work-title">Paper Bloom</div>
+          <div class="ph-work-student">Anagha Thadimary — Graphic Design</div>
+          <a class="ph-work-watch" href="#" target="_blank" rel="noopener" data-project="Paper Bloom">Watch full work <span>→</span></a>
+        </div>
+      </div>
+      <div class="ph-work-item h-wide">
+        <video class="ph-work-media" poster="https://images.unsplash.com/photo-1502691876148-a84978e59af8?w=700&q=80" muted loop playsinline preload="none">
+          <source src="https://assets.mixkit.co/videos/5399/5399-360.mp4" type="video/mp4">
+        </video>
+        <div class="ph-work-tag">Character Design</div>
+        <div class="ph-work-play" aria-hidden="true"></div>
+        <div class="ph-work-info">
+          <div class="ph-work-title">Forge Warden</div>
+          <div class="ph-work-student">Akshay C — 3D Modelling</div>
+          <a class="ph-work-watch" href="#" target="_blank" rel="noopener" data-project="Forge Warden">Watch full work <span>→</span></a>
+        </div>
+      </div>
+      <div class="ph-work-item h-square">
+        <video class="ph-work-media" poster="https://images.unsplash.com/photo-1461344577544-4e5dc9487184?w=700&q=80" muted loop playsinline preload="none">
+          <source src="https://assets.mixkit.co/videos/13228/13228-360.mp4" type="video/mp4">
+        </video>
+        <div class="ph-work-tag">Motion Graphics</div>
+        <div class="ph-work-play" aria-hidden="true"></div>
+        <div class="ph-work-info">
+          <div class="ph-work-title">Chromatic Drift</div>
+          <div class="ph-work-student">Ananya R — Video Editing</div>
+          <a class="ph-work-watch" href="#" target="_blank" rel="noopener" data-project="Chromatic Drift">Watch full work <span>→</span></a>
+        </div>
+      </div>
+      <div class="ph-work-item h-tall">
+        <video class="ph-work-media" poster="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=700&q=80" muted loop playsinline preload="none">
+          <source src="https://assets.mixkit.co/videos/17684/17684-720.mp4" type="video/mp4">
+        </video>
+        <div class="ph-work-tag">Environment Art</div>
+        <div class="ph-work-play" aria-hidden="true"></div>
+        <div class="ph-work-info">
+          <div class="ph-work-title">Iron Vale</div>
+          <div class="ph-work-student">Pavan Kumar Reddy — Game Art Design</div>
+          <a class="ph-work-watch" href="#" target="_blank" rel="noopener" data-project="Iron Vale">Watch full work <span>→</span></a>
+        </div>
+      </div>
+      <div class="ph-work-item h-wide featured">
+        <div class="ph-work-featured-badge">★ Featured Reel</div>
+        <video class="ph-work-media" poster="https://images.unsplash.com/photo-1620121692029-d088224ddc74?w=700&q=80" muted loop playsinline preload="none">
+          <source src="https://assets.mixkit.co/videos/12262/12262-360.mp4" type="video/mp4">
+        </video>
+        <div class="ph-work-tag">VFX Comp</div>
+        <div class="ph-work-play" aria-hidden="true"></div>
+        <div class="ph-work-info">
+          <div class="ph-work-title">Glass City</div>
+          <div class="ph-work-student">K. Poorvitha Reddy — Animation &amp; VFX</div>
+          <a class="ph-work-watch" href="#" target="_blank" rel="noopener" data-project="Glass City">Watch full work <span>→</span></a>
+        </div>
+      </div>
+      <div class="ph-work-item h-square">
+        <video class="ph-work-media" poster="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=700&q=80" muted loop playsinline preload="none">
+          <source src="https://assets.mixkit.co/videos/18052/18052-360.mp4" type="video/mp4">
+        </video>
+        <div class="ph-work-tag">Digital Painting</div>
+        <div class="ph-work-play" aria-hidden="true"></div>
+        <div class="ph-work-info">
+          <div class="ph-work-title">Ashen Court</div>
+          <div class="ph-work-student">Praneet Pramod Naik — Animation VFX Prime</div>
+          <a class="ph-work-watch" href="#" target="_blank" rel="noopener" data-project="Ashen Court">Watch full work <span>→</span></a>
+        </div>
+      </div>
+      <div class="ph-work-item h-tall">
+        <video class="ph-work-media" poster="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=700&q=80" muted loop playsinline preload="none">
+          <source src="https://assets.mixkit.co/videos/31491/31491-360.mp4" type="video/mp4">
+        </video>
+        <div class="ph-work-tag">Concept Art</div>
+        <div class="ph-work-play" aria-hidden="true"></div>
+        <div class="ph-work-info">
+          <div class="ph-work-title">Windmere</div>
+          <div class="ph-work-student">Petluru Bhanu Prakash — Animation &amp; Game Design</div>
+          <a class="ph-work-watch" href="#" target="_blank" rel="noopener" data-project="Windmere">Watch full work <span>→</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="ph-work-cta">
+      <button class="ph-btn ph-btn-ghost">View full gallery →</button>
+    </div>
+  </section>
+
+  <section class="ph-section ph-section-people" id="alumni">
+    <p class="ph-label">Meet Our Star Students</p>
+    <h2 class="ph-section-title">Alumni working in the<br>industry right now.</h2>
+    <div class="ph-stars-wrap" id="starsWrap">
+      <div class="ph-people-grid ph-stars-grid" id="starsTrack">
+        <div class="ph-star-card">
+          <div class="ph-star-photo"><span class="ph-star-initials">RD</span></div>
+          <div class="ph-star-body">
+            <div class="ph-star-name">Rakshith D</div>
+            <div class="ph-star-role">VFX Artist</div>
+            <div class="ph-star-meta">
+              <div class="ph-star-meta-item">
+                <div class="ph-star-meta-label">Placed At</div>
+                <div class="ph-star-meta-value">Studio Name</div>
+              </div>
+              <div class="ph-star-meta-item">
+                <div class="ph-star-meta-label">Package</div>
+                <div class="ph-star-meta-value">₹0.0 LPA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ph-star-card">
+          <div class="ph-star-photo"><span class="ph-star-initials">AD</span></div>
+          <div class="ph-star-body">
+            <div class="ph-star-name">Archana Dadmi</div>
+            <div class="ph-star-role">Environment &amp; Generalist</div>
+            <div class="ph-star-meta">
+              <div class="ph-star-meta-item">
+                <div class="ph-star-meta-label">Placed At</div>
+                <div class="ph-star-meta-value">Studio Name</div>
+              </div>
+              <div class="ph-star-meta-item">
+                <div class="ph-star-meta-label">Package</div>
+                <div class="ph-star-meta-value">₹0.0 LPA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ph-star-card">
+          <div class="ph-star-photo"><span class="ph-star-initials">PA</span></div>
+          <div class="ph-star-body">
+            <div class="ph-star-name">Prathik P Acharya</div>
+            <div class="ph-star-role">3D Animator</div>
+            <div class="ph-star-meta">
+              <div class="ph-star-meta-item">
+                <div class="ph-star-meta-label">Placed At</div>
+                <div class="ph-star-meta-value">Studio Name</div>
+              </div>
+              <div class="ph-star-meta-item">
+                <div class="ph-star-meta-label">Package</div>
+                <div class="ph-star-meta-value">₹0.0 LPA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ph-star-card">
+          <div class="ph-star-photo"><span class="ph-star-initials">TM</span></div>
+          <div class="ph-star-body">
+            <div class="ph-star-name">Thashwini B M</div>
+            <div class="ph-star-role">Texture / Look Dev Artist</div>
+            <div class="ph-star-meta">
+              <div class="ph-star-meta-item">
+                <div class="ph-star-meta-label">Placed At</div>
+                <div class="ph-star-meta-value">Studio Name</div>
+              </div>
+              <div class="ph-star-meta-item">
+                <div class="ph-star-meta-label">Package</div>
+                <div class="ph-star-meta-value">₹0.0 LPA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="ph-carousel-arrow prev" data-dir="-1" aria-label="Previous student">‹</button>
+      <button class="ph-carousel-arrow next" data-dir="1" aria-label="Next student">›</button>
+    </div>
+    <div class="ph-carousel-dots" id="starsDots"></div>
+  </section>
+
+  <section class="ph-section ph-section-people" id="placements">
+    <p class="ph-label">Our Recent Placements</p>
+    <h2 class="ph-section-title">Fresh off campus,<br>already hired.</h2>
+    <div class="ph-placements-wrap" id="placementsWrap">
+      <div class="ph-placements-grid" id="placementsTrack">
+        <div class="ph-placement-card">
+          <div class="ph-placement-photo">
+            <span class="ph-placement-initials">AV</span>
+            <div class="ph-placement-tag"><span class="ph-placement-dot"></span>Just Placed</div>
+            <div class="ph-placement-photo-info">
+              <div class="ph-placement-name">Adityaragavan V</div>
+              <div class="ph-placement-role">Motion Graphic Designer</div>
+            </div>
+          </div>
+          <div class="ph-placement-body">
+            <div class="ph-placement-footer">
+              <span class="ph-placement-company">Studio Name</span>
+              <span class="ph-placement-package">₹0.0 LPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="ph-placement-card">
+          <div class="ph-placement-photo">
+            <span class="ph-placement-initials">AT</span>
+            <div class="ph-placement-tag"><span class="ph-placement-dot"></span>Just Placed</div>
+            <div class="ph-placement-photo-info">
+              <div class="ph-placement-name">Anagha Thadimary</div>
+              <div class="ph-placement-role">Graphic Designer</div>
+            </div>
+          </div>
+          <div class="ph-placement-body">
+            <div class="ph-placement-footer">
+              <span class="ph-placement-company">Studio Name</span>
+              <span class="ph-placement-package">₹0.0 LPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="ph-placement-card">
+          <div class="ph-placement-photo">
+            <span class="ph-placement-initials">AC</span>
+            <div class="ph-placement-tag"><span class="ph-placement-dot"></span>Just Placed</div>
+            <div class="ph-placement-photo-info">
+              <div class="ph-placement-name">Akshay C</div>
+              <div class="ph-placement-role">3D Modeller</div>
+            </div>
+          </div>
+          <div class="ph-placement-body">
+            <div class="ph-placement-footer">
+              <span class="ph-placement-company">Studio Name</span>
+              <span class="ph-placement-package">₹0.0 LPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="ph-placement-card">
+          <div class="ph-placement-photo">
+            <span class="ph-placement-initials">AR</span>
+            <div class="ph-placement-tag"><span class="ph-placement-dot"></span>Just Placed</div>
+            <div class="ph-placement-photo-info">
+              <div class="ph-placement-name">Ananya R</div>
+              <div class="ph-placement-role">Video Editor</div>
+            </div>
+          </div>
+          <div class="ph-placement-body">
+            <div class="ph-placement-footer">
+              <span class="ph-placement-company">Studio Name</span>
+              <span class="ph-placement-package">₹0.0 LPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="ph-placement-card">
+          <div class="ph-placement-photo">
+            <span class="ph-placement-initials">PK</span>
+            <div class="ph-placement-tag"><span class="ph-placement-dot"></span>Just Placed</div>
+            <div class="ph-placement-photo-info">
+              <div class="ph-placement-name">Pavan Kumar Reddy</div>
+              <div class="ph-placement-role">Motion Graphics Designer</div>
+            </div>
+          </div>
+          <div class="ph-placement-body">
+            <div class="ph-placement-footer">
+              <span class="ph-placement-company">Studio Name</span>
+              <span class="ph-placement-package">₹0.0 LPA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="ph-carousel-arrow prev" data-dir="-1" aria-label="Previous placement">‹</button>
+      <button class="ph-carousel-arrow next" data-dir="1" aria-label="Next placement">›</button>
+    </div>
+    <div class="ph-carousel-dots" id="placementsDots"></div>
+  </section>
+
+  <section class="ph-section ph-section-testimonials" id="testimonials">
+    <p class="ph-label">Student Testimonials</p>
+    <h2 class="ph-section-title">In their own words.</h2>
+    <div class="ph-testimonials-wrap" id="testimonialsWrap">
+      <div class="ph-testimonials-grid" id="testimonialsTrack">
+        <div class="ph-testimonial-card">
+          <div class="ph-testimonial-media">
+            <!-- swap this for <video src="..." poster="..." muted loop playsinline> when real clips are ready -->
+            <span class="ph-testimonial-initials">KP</span>
+            <div class="ph-testimonial-badge">▶ Video</div>
+            <div class="ph-testimonial-duration">0:38</div>
+            <div class="ph-testimonial-play"></div>
+            <div class="ph-testimonial-photo-info">
+              <div class="ph-testimonial-name">K. Poorvitha Reddy</div>
+              <div class="ph-testimonial-role">B.Sc Graphics, Animation &amp; VFX</div>
+            </div>
+          </div>
+          <div class="ph-testimonial-body">
+            <p class="ph-testimonial-text">Grateful for the opportunity to build a real design career here — the faculty pushed my skills further than I expected.</p>
+          </div>
+        </div>
+        <div class="ph-testimonial-card">
+          <div class="ph-testimonial-media">
+            <span class="ph-testimonial-initials">PN</span>
+            <div class="ph-testimonial-badge">▶ Video</div>
+            <div class="ph-testimonial-duration">0:52</div>
+            <div class="ph-testimonial-play"></div>
+            <div class="ph-testimonial-photo-info">
+              <div class="ph-testimonial-name">Praneet Pramod Naik</div>
+              <div class="ph-testimonial-role">Animation VFX Prime</div>
+            </div>
+          </div>
+          <div class="ph-testimonial-body">
+            <p class="ph-testimonial-text">The training covered every creative skill needed for media and entertainment work, backed by real support from the college.</p>
+          </div>
+        </div>
+        <div class="ph-testimonial-card">
+          <div class="ph-testimonial-media">
+            <span class="ph-testimonial-initials">AT</span>
+            <div class="ph-testimonial-badge">▶ Video</div>
+            <div class="ph-testimonial-duration">0:45</div>
+            <div class="ph-testimonial-play"></div>
+            <div class="ph-testimonial-photo-info">
+              <div class="ph-testimonial-name">Anagha Thadimary</div>
+              <div class="ph-testimonial-role">B.Sc Animation &amp; Game Design</div>
+            </div>
+          </div>
+          <div class="ph-testimonial-body">
+            <p class="ph-testimonial-text">Friendly, professional faculty with real industry experience — I was placed before finishing my fifth semester.</p>
+          </div>
+        </div>
+        <div class="ph-testimonial-card">
+          <div class="ph-testimonial-media">
+            <span class="ph-testimonial-initials">PB</span>
+            <div class="ph-testimonial-badge">▶ Video</div>
+            <div class="ph-testimonial-duration">0:31</div>
+            <div class="ph-testimonial-play"></div>
+            <div class="ph-testimonial-photo-info">
+              <div class="ph-testimonial-name">Petluru Bhanu Prakash</div>
+              <div class="ph-testimonial-role">B.Sc Animation &amp; Game Design</div>
+            </div>
+          </div>
+          <div class="ph-testimonial-body">
+            <p class="ph-testimonial-text">Thankful for the help landing a dream job — taught exactly the skills the design industry is looking for.</p>
+          </div>
+        </div>
+      </div>
+      <button class="ph-carousel-arrow prev" data-dir="-1" aria-label="Previous testimonial">‹</button>
+      <button class="ph-carousel-arrow next" data-dir="1" aria-label="Next testimonial">›</button>
+    </div>
+    <div class="ph-carousel-dots" id="testimonialsDots"></div>
+  </section>
+
+  <section class="ph-section ph-section-faq" id="faq">
+    <p class="ph-label" style="text-align:center">Good To Know</p>
+    <h2 class="ph-section-title" style="text-align:center">Frequently asked<br>questions.</h2>
+    <div class="ph-faq-list">
+      <details class="ph-faq-item" open>
+        <summary class="ph-faq-q">What courses does Arena Animation offer?<span class="ph-faq-icon">+</span></summary>
+        <div class="ph-faq-a">We offer career-focused programs across Animation, VFX, Gaming, Graphic Design, Web Design and Motion Graphics — from short-term certifications to full diploma tracks, all built around live industry projects.</div>
+      </details>
+      <details class="ph-faq-item">
+        <summary class="ph-faq-q">Do I need a design background to join?<span class="ph-faq-icon">+</span></summary>
+        <div class="ph-faq-a">No prior design experience is required for most of our foundation-level courses. Our mentors start from the fundamentals and build up your skills through hands-on studio work.</div>
+      </details>
+      <details class="ph-faq-item">
+        <summary class="ph-faq-q">How does the placement program work?<span class="ph-faq-icon">+</span></summary>
+        <div class="ph-faq-a">Placement support runs alongside your coursework — resume and portfolio reviews, mock interviews, and direct introductions to our hiring partners as you approach graduation.</div>
+      </details>
+      <details class="ph-faq-item">
+        <summary class="ph-faq-q">Can I attend a demo class before enrolling?<span class="ph-faq-icon">+</span></summary>
+        <div class="ph-faq-a">Yes — we offer a free, no-commitment demo class so you can sit in on a real session, meet the mentors, and see the studio before deciding.</div>
+      </details>
+      <details class="ph-faq-item">
+        <summary class="ph-faq-q">What are the class timings and duration?<span class="ph-faq-icon">+</span></summary>
+        <div class="ph-faq-a">Course duration varies by program, ranging from a few weeks for short certifications to a few years for full diploma tracks. Weekday and weekend batches are both available — ask us for the current schedule.</div>
+      </details>
+    </div>
+  </section>
+
+  <section class="ph-section ph-section-cta" id="contact">
+    <div class="ph-cta-placeholder-img"></div>
+    <h2 class="ph-section-title">Ready to build your reel?</h2>
+    <p>Start with a free demo class. No commitment required — come see the studio, meet the mentors, decide from there.</p>
+    <button class="ph-btn ph-btn-dark">Book a free demo class</button>
+  </section>
+
+  <footer class="ph-section ph-section-footer">
+    <div class="ph-footer-cols">
+      <div>
+        <div class="ph-footer-brand">Arena Animation</div>
+        <p class="ph-footer-desc">Established in 1996, Arena Creative Campus Banashankari is India's leading institute for Animation, VFX, Gaming, Graphics and Web Design.</p>
+      </div>
+      <div>
+        <div class="ph-footer-heading">Explore</div>
+        <div class="ph-footer-links">
+          <a href="#">Animation Courses</a>
+          <a href="#">VFX Courses</a>
+          <a href="#">Game Design Courses</a>
+          <a href="#">Digital Design Courses</a>
+          <a href="#">UI/UX Courses</a>
+        </div>
+      </div>
+      <div>
+        <div class="ph-footer-heading">Contact</div>
+        <div class="ph-footer-links">
+          <a href="tel:+919341228440">+91 93412 28440</a>
+          <a href="mailto:info@arenabanashankari.com">info@arenabanashankari.com</a>
+          <a href="#">Banashankari Main Campus</a>
+          <a href="#">Arena Creative Campus</a>
+        </div>
+      </div>
+    </div>
+    <div class="ph-footer-inner">
+      <div class="ph-footer-brand" style="font-size:1.1rem">Arena Animation Banashankari</div>
+      <div style="font-size:.72rem; font-family:'JetBrains Mono',monospace;">Est. 1996 · Bangalore</div>
+    </div>
+  </footer>
+
+</div><!-- /ph-scroll-sections -->
+
+<script>
+const prog   = document.getElementById('prog');
+const hint   = document.getElementById('hint');
+const ringsE = document.getElementById('rings');
+const scroller = document.getElementById('scroller');
+const scenes = ['s1','s2','s3','s4','s5'].map(id => document.getElementById(id));
+
+// decorative rings
+for (let i = 0; i < 10; i++) {
+  const r = document.createElement('div');
+  r.className = 'ring';
+  const s = 120 + i * 150;
+  r.style.width  = s + 'px';
+  r.style.height = s + 'px';
+  ringsE.appendChild(r);
+}
+
+const clamp = (v,lo,hi) => Math.min(hi, Math.max(lo, v));
+const ease  = t => t < .5 ? 2*t*t : -1+(4-2*t)*t;
+const lerp  = (a,b,t) => a + (b-a)*t;
+
+const N   = scenes.length;   // 5
+const SEG = 1 / (N - 1);    // 0.25 per transition
+
+const BACK    = 1100;
+const FORWARD =  550;
+
+function getP(){
+  const maxS = scroller.scrollHeight - window.innerHeight;
+  return clamp(window.scrollY / maxS, 0, 1);
+}
+
+function tick(){
+  const p = getP();
+  prog.style.width = (p * 100) + '%';
+  hint.style.opacity = clamp(1 - p * 12, 0, 1);
+
+  scenes.forEach((el, i) => {
+    const center = i * SEG;
+    const dist   = p - center;   // <0 ahead, 0 active, >0 passed
+
+    let z, opacity, scale;
+
+    if (dist <= 0) {
+      const t = clamp(1 + dist / SEG, 0, 1);
+      z       = lerp(-BACK, 0, ease(t));
+      opacity = lerp(0, 1, ease(clamp(t * 2.5, 0, 1)));
+      scale   = lerp(.88, 1, ease(t));
+    } else {
+      const t = clamp(dist / SEG, 0, 1);
+      z       = lerp(0, FORWARD, ease(t));
+      scale   = lerp(1, 1.2, ease(t));
+      opacity = lerp(1, 0, ease(clamp(t * 2, 0, 1)));
+    }
+
+    const near = Math.abs(dist) < SEG * 1.6;
+
+    el.style.display       = 'flex';
+    el.style.pointerEvents = near ? 'auto' : 'none';
+    el.style.transform     = `translateZ(${z}px) scale(${scale})`;
+    el.style.opacity       = near ? Math.max(0, opacity) : 0;
+    el.style.zIndex        = near ? Math.round(500 - Math.abs(dist) * 1000) : 0;
+  });
+}
+
+let raf = false;
+window.addEventListener('scroll', () => {
+  if (!raf){ raf=true; requestAnimationFrame(() => { tick(); raf=false; }); }
+}, { passive: true });
+
+tick();
+
+// course card buttons
+document.querySelectorAll('.card-btn[data-course]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // TODO: route this to your actual course details page / modal
+    console.log('Course details requested:', btn.dataset.course);
+  });
+});
+
+// student work gallery: play the reel on hover/tap, and route "watch full work" clicks
+document.querySelectorAll('.ph-work-item').forEach(item => {
+  const video = item.querySelector('.ph-work-media');
+  if (video) {
+    item.addEventListener('mouseenter', () => { video.play().catch(() => {}); });
+    item.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
+    item.addEventListener('touchstart', () => {
+      video.paused ? video.play().catch(() => {}) : video.pause();
+    }, { passive: true });
+  }
+  const watchLink = item.querySelector('.ph-work-watch');
+  if (watchLink) {
+    watchLink.addEventListener('click', (e) => {
+      e.stopPropagation();
+      // TODO: point this at the actual full-length reel / portfolio page per project
+      console.log('Watch full work requested:', watchLink.dataset.project);
+    });
+  }
+});
+
+// post-hero course card "Book Demo" buttons
+document.querySelectorAll('.ph-course-btn[data-course]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // TODO: open your actual demo-booking form / modal, pre-filled with the course
+    console.log('Demo class requested for:', btn.dataset.course);
+  });
+});
+
+// demo form submit
+const demoForm = document.getElementById('demo-form');
+const formNote = document.getElementById('form-note');
+if (demoForm) {
+  demoForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(demoForm);
+    // TODO: wire this up to your actual lead endpoint / CRM
+    console.log('Demo class request:', Object.fromEntries(data.entries()));
+    formNote.textContent = 'Thanks — we\'ll reach out shortly.';
+    demoForm.reset();
+  });
+}
+
+// ── Effect 2: scale + fade the second sticky hero as its own
+// section slides over it. Progress is measured from postHero's own
+// offsetTop (i.e. right where the 600vh depth scroller ends), so this
+// only starts animating once the first effect has fully finished.
+const postHero = document.getElementById('post-hero');
+
+function onPostHeroScroll() {
+  const heroTop = postHero.offsetTop;
+  const scrollY = window.scrollY;
+  const vh = window.innerHeight;
+
+  const progress = Math.min(Math.max((scrollY - heroTop) / vh, 0), 1);
+
+  const scale   = 1 - progress * 0.1;
+  const opacity = 1 - progress * 0.65;
+
+  postHero.style.transform = `scale(${scale})`;
+  postHero.style.opacity   = opacity;
+}
+
+window.addEventListener('scroll', onPostHeroScroll, { passive: true });
+onPostHeroScroll();
+
+// ── Results strip: animate numbers counting up once scrolled into view
+const statNums = document.querySelectorAll('#results .ph-stat-num');
+function animateCount(el) {
+  const target = parseFloat(el.dataset.countTo);
+  const suffix = el.dataset.suffix || '';
+  const duration = 1400;
+  const start = performance.now();
+
+  function step(now) {
+    const t = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - t, 3);
+    const value = Math.round(target * eased);
+    el.textContent = value + suffix;
+    if (t < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+if (statNums.length) {
+  const resultsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        statNums.forEach(animateCount);
+        resultsObserver.disconnect();
+      }
+    });
+  }, { threshold: 0.4 });
+
+  resultsObserver.observe(document.getElementById('results'));
+}
+
+// ── generic auto-scrolling carousel: horizontal scroll-snap, arrows, dots,
+// autoplay that loops and pauses on hover / touch / when off-screen
+function initCarousel({ trackId, wrapId, dotsId, label, autoplayMs = 3200 }) {
+  const track = document.getElementById(trackId);
+  const wrap  = document.getElementById(wrapId);
+  const dotsWrap = document.getElementById(dotsId);
+  if (!track || !wrap || !dotsWrap) return;
+
+  const cards = Array.from(track.children);
+
+  cards.forEach((card, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'ph-carousel-dot';
+    dot.setAttribute('aria-label', 'Go to ' + label + ' ' + (i + 1));
+    dot.addEventListener('click', () => {
+      card.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+    });
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
+
+  function updateDots() {
+    const trackLeft = track.getBoundingClientRect().left;
+    let closest = 0, closestDist = Infinity;
+    cards.forEach((card, i) => {
+      const dist = Math.abs(card.getBoundingClientRect().left - trackLeft);
+      if (dist < closestDist) { closestDist = dist; closest = i; }
+    });
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === closest));
+  }
+
+  let raf = false;
+  track.addEventListener('scroll', () => {
+    if (!raf) { raf = true; requestAnimationFrame(() => { updateDots(); raf = false; }); }
+  }, { passive: true });
+  updateDots();
+
+  function stepAmount() {
+    const gap = parseFloat(getComputedStyle(track).columnGap || 32);
+    return cards[0].getBoundingClientRect().width + gap;
+  }
+
+  wrap.querySelectorAll('.ph-carousel-arrow').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const dir = parseInt(btn.dataset.dir, 10);
+      track.scrollBy({ left: stepAmount() * dir, behavior: 'smooth' });
+      restartAutoplay();
+    });
+  });
+
+  let timer = null;
+  function advance() {
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    if (track.scrollLeft >= maxScroll - 4) {
+      track.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      track.scrollBy({ left: stepAmount(), behavior: 'smooth' });
+    }
+  }
+  function startAutoplay() { stopAutoplay(); timer = setInterval(advance, autoplayMs); }
+  function stopAutoplay() { if (timer) { clearInterval(timer); timer = null; } }
+  function restartAutoplay() { stopAutoplay(); startAutoplay(); }
+
+  wrap.addEventListener('mouseenter', stopAutoplay);
+  wrap.addEventListener('mouseleave', startAutoplay);
+  track.addEventListener('touchstart', stopAutoplay, { passive: true });
+  track.addEventListener('touchend', () => setTimeout(startAutoplay, autoplayMs));
+
+  // only run while the carousel is actually on screen
+  const visibility = new IntersectionObserver((entries) => {
+    entries.forEach(entry => entry.isIntersecting ? startAutoplay() : stopAutoplay());
+  }, { threshold: 0.3 });
+  visibility.observe(wrap);
+}
+
+initCarousel({ trackId: 'starsTrack', wrapId: 'starsWrap', dotsId: 'starsDots', label: 'student', autoplayMs: 3200 });
+initCarousel({ trackId: 'placementsTrack', wrapId: 'placementsWrap', dotsId: 'placementsDots', label: 'placement', autoplayMs: 2800 });
+initCarousel({ trackId: 'testimonialsTrack', wrapId: 'testimonialsWrap', dotsId: 'testimonialsDots', label: 'testimonial', autoplayMs: 3600 });
+
+// ── site nav: scrolled state, hamburger toggle, close on link/CTA click
+const siteNav    = document.getElementById('site-nav');
+const navToggle  = document.getElementById('nav-toggle');
+const navOverlay = document.getElementById('nav-overlay');
+
+function updateNavScrolled() {
+  siteNav.classList.toggle('scrolled', window.scrollY > 40);
+}
+window.addEventListener('scroll', updateNavScrolled, { passive: true });
+updateNavScrolled();
+
+function setNavOpen(open) {
+  navToggle.classList.toggle('open', open);
+  navOverlay.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  navOverlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+  document.body.classList.toggle('nav-locked', open);
+}
+
+navToggle.addEventListener('click', () => {
+  setNavOpen(!navOverlay.classList.contains('open'));
+});
+
+navOverlay.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => setNavOpen(false));
+});
+
+const navCtaBtn = document.getElementById('nav-overlay-cta-btn');
+if (navCtaBtn) {
+  navCtaBtn.addEventListener('click', () => {
+    setNavOpen(false);
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  });
+}
+
+const navCtaDesktopBtn = document.getElementById('nav-cta-desktop-btn');
+if (navCtaDesktopBtn) {
+  navCtaDesktopBtn.addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  });
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') setNavOpen(false);
+});
+
+// testimonial video cards: click to play once real <video> sources are added
+document.querySelectorAll('.ph-testimonial-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const video = card.querySelector('video');
+    if (!video) return; // no real clip wired up yet — swap the placeholder markup for a <video> tag first
+    document.querySelectorAll('.ph-testimonial-card video').forEach(v => { if (v !== video) v.pause(); });
+    video.paused ? video.play() : video.pause();
+  });
+});
+</script>
+</body>
+</html>
